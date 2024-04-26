@@ -183,9 +183,9 @@ function notify(entity, bypassed, other)
 	sound()
 	local tem = template:Clone()
 	tem.Visible = true
-	tem.TextLabel.Text = entity .. " Has just spawned!"
+	tem.TextLabel.Text = entity .. " Has spawned!"
 	if bypassed then
-		tem.TextLabel.Text = entity .. " Has been bypassed!"
+		tem.TextLabel.Text = entity .. " Has bypassed!"
 	end
 	if other then
 		tem.TextLabel.Text = other
@@ -296,7 +296,7 @@ workspace.ChildAdded:Connect(function(child)
 		selection(child:WaitForChild("Core"), "👁️ Backdoor Lookman")
 	elseif child.Name == "BackdoorRush" then
 		notify("💨 Blitz (Backdoor Rush)")
-		selection(child:WaitForChild("Main"), "💨 Blitz (Backdoor Rush)")
+		selection(child:WaitForChild("Main"), "💨 Blitz")
 	end
 end)
 
@@ -402,7 +402,7 @@ end)
 
 notify("", nil, " Script made by: EAS Studios.")
 notify("👁️ Backdoor Lookman", true)
-notify("", nil, "⚡ Haste is now server-sided so it cannot be bypassed, annoying visuals removed.")
+notify("", nil, "⚡ Haste is cant bypassed anymore :(.")
 
 if game:GetService("ReplicatedStorage").FloorClientStuff.ClientRemote:FindFirstChild("Haste") then
 	game:GetService("ReplicatedStorage").FloorClientStuff.ClientRemote.Haste:Destroy()
@@ -414,7 +414,7 @@ game:GetService("ReplicatedStorage").FloorClientStuff.DigitalTimer:GetPropertyCh
 	if game:GetService("ReplicatedStorage").FloorClientStuff.DigitalTimer.Value == 0 then
 		if not Notified then
 			Notified = true
-			notify("", nil, "⚡ Haste has spawned! Quickly get to a lever!")
+			notify("", nil, "⚡ Haste has spawned! Get to a lever now!")
 		end
 	else
 		Notified = false
