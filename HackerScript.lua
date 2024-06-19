@@ -2750,7 +2750,7 @@ reference = (function()
 	inviteButton.MouseButton1Click:Connect(function()
 		local func = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
 		if func then
-			func("Coming Soon")
+			func("discord.gg/V67aAkXMWf")
 			inviteButton.Text = "Copied"
 		else
 			inviteButton.Text = "No Clipboard Function, type out the link"
@@ -4252,7 +4252,7 @@ CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Hacker Admin support server.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
 CMDs[#CMDs + 1] = {NAME = 'explorerpc / dexpc', DESC = 'Opens DEX By Moon [Only Work on PC/Laptop]'}
-CMDs[#CMDs + 1] = {NAME = 'olddex / odex', DESC = 'Opens Old DEX by Moon'}
+CMDs[#CMDs + 1] = {NAME = 'explorermobile / dexmobile', DESC = 'Opens KEYLESS DEX Rework (ONLY Mobile)'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
 CMDs[#CMDs + 1] = {NAME = 'audiologger / alogger', DESC = 'Opens Edges audio logger'}
 CMDs[#CMDs + 1] = {NAME = 'serverinfo / info', DESC = 'Gives you info about the server'}
@@ -4281,9 +4281,9 @@ CMDs[#CMDs + 1] = {NAME = 'guidelete', DESC = 'Enables backspace to delete GUI'}
 CMDs[#CMDs + 1] = {NAME = 'unguidelete / noguidelete', DESC = 'Disables guidelete'}
 CMDs[#CMDs + 1] = {NAME = 'hideiy', DESC = 'Hides the main IY GUI'}
 CMDs[#CMDs + 1] = {NAME = 'showiy / unhideiy', DESC = 'Shows IY again'}
-CMDs[#CMDs + 1] = {NAME = 'keepiy', DESC = 'Auto execute IY when you teleport through servers'}
-CMDs[#CMDs + 1] = {NAME = 'unkeepiy', DESC = 'Disable keepiy'}
-CMDs[#CMDs + 1] = {NAME = 'togglekeepiy', DESC = 'Toggle keepiy'}
+CMDs[#CMDs + 1] = {NAME = 'keepha', DESC = 'Auto execute HA when you teleport through servers'}
+CMDs[#CMDs + 1] = {NAME = 'unkeepiy', DESC = 'Disable keepha'}
+CMDs[#CMDs + 1] = {NAME = 'togglekeepha', DESC = 'Toggle keepha'}
 CMDs[#CMDs + 1] = {NAME = 'savegame / saveplace', DESC = 'Uses saveinstance to save the game'}
 CMDs[#CMDs + 1] = {NAME = 'clearerror', DESC = 'Clears the annoying box and blur when a game kicks you'}
 CMDs[#CMDs + 1] = {NAME = 'clientantikick / antikick (CLIENT)', DESC = 'Prevents localscripts from kicking you'}
