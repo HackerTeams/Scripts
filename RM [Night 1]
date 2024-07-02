@@ -203,8 +203,10 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "3rd Person View In-House",
 	Callback = function()
-		game.Players.LocalPlayer.CameraMode = Enum.CameraMode.Classic
-	end
+	    while wait() do
+	        game.Players.LocalPlayer.CameraMode = Enum.CameraMode.Classic
+        end
+    end
 })
 
 Tab:AddToggle({
